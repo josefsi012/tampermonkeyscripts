@@ -14,10 +14,10 @@
 
 /*
  _   _       _
-| \ | | ___ | |_ ___ _
-|  \| |/ _ \| __/ _ (_)
-| |\  | (_) | ||  __/_
-|_| \_|\___/ \__\___(_)
+| \ | | ___ | |_ ___
+|  \| |/ _ \| __/ _ \
+| |\  | (_) | ||  __/
+|_| \_|\___/ \__\___|
 
 Do not use the slim version of jquery.  The jQuery.load function is not included and will break the FSI-SIM -> Activity tab.  Minified version is fine and what is used in this script.
 
@@ -32,7 +32,7 @@ $(document).ready(function() {
         { text: "Support Requests",   link: "/issues/issuesSearchResults.cfm?stat=true&issueClass=5&issueStatus=1,2,3,4,5,7,29&locId=39,323&simtype=1,4,5,6,7,10,13,14,15,17,21,25" },
     ];
 
-    // Remvoe the worthless spinner
+    // Remvoe the broken spinner
     $("#accordionDIV > img").remove();
 
     // Remove the script call
