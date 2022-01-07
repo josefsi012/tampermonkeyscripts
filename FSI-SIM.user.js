@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         FSI-SIM
 // @namespace    https://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @updateURL    https://raw.githubusercontent.com/josefsi012/tampermonkeyscripts/main/FSI-SIM.user.js
 // @downloadURL  https://raw.githubusercontent.com/josefsi012/tampermonkeyscripts/main/FSI-SIM.user.js
 // @description  Replaces broken spinner with needed links
@@ -40,6 +40,7 @@ $(document).ready(function() {
     // Remove the script call
     $("#menuDiv > script:nth-child(12)").remove();
 
+    // Now add the links to where the spinner was
     $.each(fsi_links, function (index, key) {
         var new_link = $('<span>').css("height", "22px").css("width","auto").append($('<a>').addClass("menuItem").attr("href", key["link"]).text(key["text"]));
         $("#accordionDIV").append(
