@@ -1,7 +1,9 @@
 // ==UserScript==
 // @name         FSI-SIM
 // @namespace    https://tampermonkey.net/
-// @version      0.2
+// @version      0.3
+// @updateURL    https://raw.githubusercontent.com/josefsi012/tampermonkeyscripts/main/FSI-SIM.user.js
+// @downloadURL  https://raw.githubusercontent.com/josefsi012/tampermonkeyscripts/main/FSI-SIM.user.js
 // @description  Replaces broken spinner with needed links
 // @author       You
 // @match        https://fsisims.ssd.fsi.com/*
