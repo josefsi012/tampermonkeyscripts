@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         FSI-SIM
 // @namespace    https://tampermonkey.net/
-// @version      0.6
+// @version      0.7
 // @updateURL    https://raw.githubusercontent.com/josefsi012/tampermonkeyscripts/main/FSI-SIM.user.js
 // @downloadURL  https://raw.githubusercontent.com/josefsi012/tampermonkeyscripts/main/FSI-SIM.user.js
 // @description  Replaces broken spinner with needed links
@@ -30,6 +30,9 @@ $(document).ready(function() {
     $.ajax({url: "/commonFunctions.cfc?method=getAccordionData", success: function(result){
         // Fix the accordion
         $("#accordionDIV").html(result);
+     
+        // Remove the "refresh" button on the top right of the spinner
+        $("#panel1Header > div:nth-child(2) > img").remove();
 
         // Add "Change in last 3 days" link
         td1 = $('<td>').append($('<a>').attr("href", "http://fsisims.ssd.fsi.com/issues/issuesSearchResults.cfm?docno=&activedatestart=&closedatestart=&rfqadateend=&simpkey=404,409,419,425,429&dlinecomment=&issuedescrip=&issueidstart=&acct=&buildno=&closedateend=&jobno=&secsort=issueId&cwsid=&enterdateend=&rfqadatestart=&advsearch=true&primsort=issueId&trncritical=0&activitydays=3&rfrdateend=&activedateend=&rfrdatestart=&enterdatestart=&issuestatus=1,2,3,7,4,5&issueidend=&issueid=&losttime=0&&usenewtmpl=1").text("Change in last 3 days"));
