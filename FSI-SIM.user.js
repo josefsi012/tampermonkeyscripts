@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         FSI-SIM
 // @namespace    https://tampermonkey.net/
-// @version      0.8
+// @version      0.9
 // @updateURL    https://raw.githubusercontent.com/josefsi012/tampermonkeyscripts/main/FSI-SIM.user.js
 // @downloadURL  https://raw.githubusercontent.com/josefsi012/tampermonkeyscripts/main/FSI-SIM.user.js
 // @description  Replaces broken spinner with needed links
@@ -42,8 +42,6 @@ jQuery360(document).ready(function($) {
         tr = $('<tr>').append(td1, td2);
 
         $("#panelSimMaintContent > table > tbody").append(tr);
-
-        $.redirect('demo.php', {'arg1': 'value1', 'arg2': 'value2'});
     }});
 
 });
