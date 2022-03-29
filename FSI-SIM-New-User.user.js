@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         FSI-SIM Create New Issue
 // @namespace    https://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @updateURL    https://raw.githubusercontent.com/josefsi012/tampermonkeyscripts/main/FSI-SIM-New-User.user.js
 // @downloadURL  https://raw.githubusercontent.com/josefsi012/tampermonkeyscripts/main/FSI-SIM-New-User.user.js
 // @description  Removes devices we don't use.
@@ -41,8 +41,8 @@ jQuery360(document).ready(function($) {
         "GFS # 3": "337",
         "GFS # 4": "340",
         "GFS # 5": "341",
-        "8X GFS #1": "1517",
-        "8X GFS #2": "1518",
+        "8X GFS #1 (Left)": "1518",
+        "8X GFS #2 (Right)": "1519",
         "Mission Fit": "1652",
         "Cabin Trainer": "1145",
     };
